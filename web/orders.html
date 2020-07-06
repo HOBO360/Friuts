@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<<title>全部订单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			header{
+				background-color: white;
+			}
+			body{
+				background-color: white;
+			}
+			.ual li{
+				margin-left:5px;
+			}
+			.p2{
+				padding-left: 20px;
+			}
+			.a{
+				margin-top: -35px;
+			}
+			.p3{
+				padding-left: 18px;
+			}
+			.p5{
+				padding-left: -20px;
+			}
+			.at{
+				width: 100px;
+				height: 40px;
+				border:1px solid red;
+			}
+			.pac{
+				padding-left: 20px;
+			}
+			.mui-content{
+				margin-top: -35px;
+			}
+			.mui-bar-nav-c {
+				top: 0;
+				-webkit-box-shadow: 0 1px 6px #ccc;
+				box-shadow: 0 1px 6px #ccc;
+				background-color: white;
+			}
+			.mui-bar-nav.mui-bar .mui-icon-a {
+				margin-right: -10px;
+				margin-left: -10px;
+				padding-right: 10px;
+				padding-left: 10px;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav mui-bar-nav-c">
+			<a class="mui-action-back mui-icon mui-icon-a mui-icon-left-nav mui-pull-left" href="personal.html"></a>
+			<h1 class="mui-title">全部订单</h1>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view mui-grid-view ual">
+			    <li class="mui-table-view-cell mui-media mui-col-xs-3">
+			        <a href="#">
+			            <div class="mui-media-body">全部订单</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <div class="mui-media-body">待支付</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <div class="mui-media-body">待配送</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <div class="mui-media-body">配送中</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <div class="mui-media-body">待评价</div>
+			        </a>
+			    </li>
+			</ul>
+			<div class="container">
+				<h5><span class="mui-badge mui-badge-danger mui-badge-inverted">准时达</span>约12:35送达
+					<a style="margin-right: 25px;color: #C0C0C0;" href="#" class="mui-navigate-right mui-pull-right">配送中></a>
+				</h5>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="images/法国苹果.jpg">
+				            <div class="mui-media-body">
+				            	法国嘎啦苹果*8约800g
+				                <p class="mui-ellipsis">规格：800g</p>
+				            </div>
+				            <div class="mui-media-body mui-pull-right a">
+				            	￥25
+				                <p class="mui-ellipsis p3">x1</p>
+				            </div>
+				        </a>
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="images/法国苹果.jpg">
+				            <div class="mui-media-body">
+				            	法国嘎啦苹果*8约800g
+				                <p class="mui-ellipsis">规格：800g</p>
+				            </div>
+				            <div class="mui-media-body mui-pull-right a">
+				            	￥12.5
+				                <p class="mui-ellipsis p3">x1</p>
+				            </div>
+				        </a>
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="images/法国苹果.jpg">
+				            <div class="mui-media-body">
+				            	法国嘎啦苹果*8约800g
+				                <p class="mui-ellipsis">规格：800g</p>
+				            </div>
+				            <div class="mui-media-body mui-pull-right a">
+				            	￥12.5
+				                <p class="mui-ellipsis p3">x1</p>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media">
+				   		<a href="javascript:;">
+				            <div class="mui-media-body mui-pull-right">
+				            	<p class="text-muted">共3件商品<span class="mui-pull-right">合计￥88.60</span></p>
+				            	<button type="button" class="btn btn-default">再来一单</button>
+				            	<button type="button" class="btn btn-default">确认送达</button>
+				            </div>
+				            
+				        </a>
+				    </li>
+				</ul>
+				<h5><span class="mui-badge mui-badge-danger mui-badge-inverted">次日达</span>约明晚18:10送达
+					<a style="margin-right: 25px;color: #C0C0C0;" href="#" class="mui-navigate-right mui-pull-right">自动配送中></a>
+				</h5>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="images/法国苹果.jpg">
+				            <div class="mui-media-body">
+				            	法国嘎啦苹果*8约800g
+				                <p class="mui-ellipsis">规格：800g</p>
+				            </div>
+				            <div class="mui-media-body mui-pull-right a">
+				            	￥25
+				                <p class="mui-ellipsis p3">x1</p>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media">
+				   		<a href="javascript:;">
+				            <div class="mui-media-body mui-pull-right">
+				            	<p class="text-muted">共3件商品<span class="mui-pull-right">合计￥88.60</span></p>
+				            	<button type="button" class="btn btn-default">再来一单</button>
+				            	<button type="button" class="btn btn-default">确认送达</button>
+				            </div>
+				            
+				        </a>
+				    </li>
+				</ul>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell mui-media">
+				   		<a href="javascript:;">
+				            <div class="mui-media-body">
+				            	<p class="mui-pull-left">2017-12-26 12:42</p>
+				            	<span class="mui-pull-right">订单已完成</span>
+				            </div>
+				        </a>
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-left" src="images/法国苹果.jpg">
+				            <div class="mui-media-body">
+				            	法国嘎啦苹果*8约800g
+				                <p class="mui-ellipsis">规格：800g</p>
+				            </div>
+				            <div class="mui-media-body mui-pull-right a">
+				            	￥25
+				                <p class="mui-ellipsis p3">x1</p>
+				            </div>
+				        </a>
+				        <a href="javascript:;">
+				            <div class="mui-media-body mui-pull-right">
+				            	<p class="text-muted">共3件商品<span class="mui-pull-right">合计￥88.60</span></p>
+				            	<button type="button" class="btn btn-default">再来一单</button>
+				            	<button type="button" class="btn btn-default">确认送达</button>
+				            </div>
+				        </a>
+				    </li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

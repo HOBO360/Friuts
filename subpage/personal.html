@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/bottom.css" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<style>
+			.nav-top{
+				width: 100%;
+				height: 100px;
+				/*background-color: black;*/
+			}
+			.nav-top span{
+				color: white;
+			}
+			.a1 img{
+				width: 30px;
+				height: 30px;
+			}
+			.a2 img{
+				width: 30px;
+				height: 30px;
+			}
+			.ua{
+				margin-top: 10px;
+			}
+			.p1{
+				padding-top: 10px;
+			}
+			.img1{
+				width: 30px;
+				height: 30px;
+			}
+			.img2{
+				width: 25px;
+				height: 25px;
+				margin-top: 10px;
+			}
+			.lala li{
+				margin-left: 8px;
+			}
+			.aimg img{
+				width: 30px;
+				height: 30px;
+				margin-left: -2px;
+			}
+			.s img{
+				width: 25px;
+				height: 25px;
+			}
+			.b img{
+				width: 35px;
+				height: 35px;
+			}
+			.mui-bar-nav-a {
+				top: 0;
+				-webkit-box-shadow: 0 1px 6px #ccc;
+				box-shadow: 0 1px 6px #ccc;
+				background-color: black;
+			}
+			.mui-bar-a{
+				position: fixed;
+				z-index: 10;
+				right: 0;
+				left: 0;
+				height: 52px;
+				padding-right: 10px;
+				padding-left: 10px;
+				border-bottom: 0;
+				-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+				box-shadow: 0 0 1px rgba(0, 0, 0, .85);
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden
+			}
+			.mui-pull-left-q{
+				float: left;
+				margin-top: 10px;
+			}
+			.mui-pull-right-w {
+				float: right;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-a mui-bar-nav mui-bar-nav-a s">
+			<div class="mui-pull-left  mui-pull-left-q">
+				<a href="#">
+					<img src="../image/设置.png" />
+				</a>
+			</div>
+			<div class="mui-pull-right mui-pull-right-w b">
+				<a href="#">
+					<img src="../image/message.png" />
+				</a>
+			</div>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			        	<img class="mui-media-object mui-pull-left" src="../image/头像.jpg">
+			            <img class="mui-pull-right img2" src="../image/二维码.png">
+			            <div class="mui-media-body">
+			                <p class="p1">鲜果小王子</p> 
+			            </div>
+			        </a>
+			    </li>
+			</ul>
+			<ul class="mui-table-view mui-grid-view">
+			    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+			        <a href="#">
+			            <p><strong>200</strong></p>
+			            <div class="mui-media-body">账户余额</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+			        <a href="#">
+			            <p><strong>200</strong></p>
+			            <div class="mui-media-body">优惠券</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+			        <a href="#">
+			            <p><strong>200</strong></p>
+			            <div class="mui-media-body">账户积分</div>
+			        </a>
+			    </li>
+			</ul>
+			<ul class="mui-table-view mui-grid-view lala">
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2 lia">
+			        <a href="#">
+			            <img src="../image/待支付.png" class="img1">
+			            <div class="mui-media-body">待支付</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <img src="../image/列表清单.png" class="img1">
+			            <div class="mui-media-body">待配送</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <img src="../image/配送.png" class="img1">
+			            <div class="mui-media-body">配送中</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-2">
+			        <a href="#">
+			            <img src="../image/评价.png" class="img1">
+			            <div class="mui-media-body">待评价</div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media mui-col-xs-3">
+			        <a href="orders.html">
+			            <img src="../image/订单.png" class="img1">
+			            <div class="mui-media-body">全部订单</div>
+			        </a>
+			    </li>
+			</ul>
+		 	<ul class="mui-table-view ua">
+		       <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">我的收藏</a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">优惠福利</a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">会员中心</a>
+		        </li>
+		    </ul>
+		    <ul class="mui-table-view ua">
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">地址管理</a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">门店/自提点查询</a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">客服帮助</a>
+		        </li>
+		         <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">设置</a>
+		        </li>
+		    </ul>
+		    <nav class="mui-bar mui-bar-tab aimg">
+				<a href="../home.html" class="mui-tab-item">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a href="classify.html" class="mui-tab-item ">
+					<span class="mui-icon-extra mui-icon-extra-class"></span>
+					<span class="mui-tab-label">分类</span>
+				</a>
+				<a href="shopping.html" class="mui-tab-item" >
+					<span class="mui-icon-extra mui-icon-extra-cart"></span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item mui-active" href="#">
+					<span class="mui-icon mui-icon-person"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+			</nav>
+		</div>
+		
+	</body>
+</html>

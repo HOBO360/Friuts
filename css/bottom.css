@@ -1,0 +1,15 @@
+			.mui-bar-tab .mui-tab-item.mui-active {
+			    color: red;
+			}
+			.mui-bar-tab .mui-tab-item .mui-icon-extra~.mui-tab-label {
+			    font-size: 11px;
+			    display: block;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			}
+			.mui-bar .mui-icon-extra {
+			    font-size: 20px;
+			    position: relative;
+			    z-index: 20;
+			   
+			}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>分类</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="../js/mui.min.js" ></script>
+    <link rel="stylesheet" href="../css/mui.min.css" />
+    <link rel="stylesheet" href="../css/icons-extra.css" />
+    <link rel="stylesheet" href="../css/bottom.css" />
+    <style>
+			.mui-row.mui-fullscreen>[class*="mui-col-"] {
+				height: 100%;
+			}
+			.mui-col-xs-3,
+			.mui-control-content {
+				overflow-y: auto;
+				height: 100%;
+			}
+			.mui-segmented-control .mui-control-item {
+				line-height: 50px;
+				width: 100%;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				background-color: #fff;
+			}
+			.mui-table-view-cell>a:not(.mui-btn) {
+			    position: relative;
+			    display: block;
+			    overflow: hidden;
+			    /* margin: -11px -15px; */
+			    padding: inherit;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    color: inherit;
+			}
+			.mui-table-view .mui-media-object {
+			    line-height: 80px;
+			    max-width: 80px;
+			    height: 80px;
+			}
+			.jiahao{
+				width: 20px;
+				height: 20px;
+			}
+			input[type=search] {
+			    font-size: 16px;
+			    -webkit-box-sizing: border-box;
+			    box-sizing: border-box;
+			    height: 34px;
+			    text-align: center;
+			    border: 0;
+			    border-radius: 20px;
+			    background-color: #EFEFF4; 
+			}
+		</style>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<div class="mui-input-row mui-search">
+			<input type="search" class="mui-input-clear" placeholder="搜索商品">
+		</div>
+	</header>
+	
+	<div class="mui-content mui-row mui-fullscreen">
+		<div class="mui-col-xs-3">
+			<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				<a class="mui-control-item mui-active" href="#content1"><span class="mui-badge-danger">热</span>今日优惠</a>
+				<a class="mui-control-item" href="#content2"><span class="mui-badge-danger">优</span>进口鲜果</a>
+				<a class="mui-control-item" href="#content3"><span class="mui-badge-danger">优</span>时令鲜果</a>
+				<a class="mui-control-item" href="#content4">今日鲜果</a>
+				<a class="mui-control-item" href="#content5">车厘子</a>
+				<a class="mui-control-item" href="#content6">柑橘橙柚</a>
+				<a class="mui-control-item" href="#content7">奇异果/猕猴桃</a>
+				<a class="mui-control-item" href="#content8">草莓/蓝莓</a>
+				<a class="mui-control-item" href="#content8">葡萄/提子</a>
+				<a class="mui-control-item" href="#content9">桃杏李</a>
+				<a class="mui-control-item" href="#content10">苹果/梨</a>
+				<a class="mui-control-item" href="#content9">瓜类</a>
+				<a class="mui-control-item" href="#content10">干果/零食</a>
+			</div>
+		</div>
+		<div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+			<div id="content1" class="mui-control-content mui-active">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/圣女果.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/车厘子.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">智利JJ级车厘子约500g<p>
+								<p class='mui-ellipsis'>再吃等一年!蜜一样的甜滋味</p><br />
+								<p><span style="color: red;">￥80.0</span><span>/份</span><img src="../image/加号.png" class="mui-pull-right jiahao" /></p>
+								
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/橙子.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/百香果.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/枇杷.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/蓝莓.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/香瓜.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="content2" class="mui-control-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/蓝莓.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/车厘子.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">智利JJ级车厘子约500g<p>
+								<p class='mui-ellipsis'>再吃等一年!蜜一样的甜滋味</p><br />
+								<p><span style="color: red;">￥80.0</span><span>/份</span><img src="../image/加号.png" class="mui-pull-right jiahao" /></p>
+								
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/橙子.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/百香果.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/枇杷.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/蓝莓.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/香瓜.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+			<div id="content3" class="mui-control-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/香瓜.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/车厘子.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">智利JJ级车厘子约500g<p>
+								<p class='mui-ellipsis'>再吃等一年!蜜一样的甜滋味</p><br />
+								<p><span style="color: red;">￥80.0</span><span>/份</span><img src="../image/加号.png" class="mui-pull-right jiahao" /></p>
+								
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/橙子.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/百香果.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/枇杷.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/蓝莓.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class="mui-media-object mui-pull-left" src="../image/香瓜.jpg">
+							<div class="mui-media-body">
+								<p style="color: black; font-size: 16px;">海南陵水圣女果  2斤装<p>
+								<p class='mui-ellipsis'>酸酸甜甜根本停不下了！</p><br />
+								<p><span style="color: red;">￥34.0</span><span>/份</span>
+									<img src="../image/加号.png" class="mui-pull-right jiahao" />
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+	<nav class="mui-bar mui-bar-tab">
+				<a href="../home.html" class="mui-tab-item " >
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item  mui-active" href="#">
+					<span class="mui-icon-extra mui-icon-extra-class"></span>
+					<span class="mui-tab-label">分类</span>
+				</a>
+				<a class="mui-tab-item" href="Friut/subpage/shopping.html">
+					<span class="mui-icon-extra mui-icon-extra-cart"></span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item" href="Friut/subpage/personal.html">
+					<span class="mui-icon mui-icon-person"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+	</nav>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var controls = document.getElementById("segmentedControls");
+			var contents = document.getElementById("segmentedControlContents");
+//			var html = [];
+//			var i = 1,
+//				j = 1,
+//				m = 16, //左侧选项卡数量+1
+//				n = 21; //每个选项卡列表数量+1
+//			for (; i < m; i++) {
+//				html.push('<a class="mui-control-item" href="#content' + i + '">选项' + i + '</a>');
+//			}
+//			controls.innerHTML = html.join('');
+//			html = [];
+//			for (i = 1; i < m; i++) {
+//				html.push('<div id="content' + i + '" class="mui-control-content"><ul class="mui-table-view">');
+//				for (j = 1; j < n; j++) {
+//					html.push('<li class="mui-table-view-cell">第' + i + '个选项卡子项-' + j + '</li>');
+//				}
+//				html.push('</ul></div>');
+//			}
+//			contents.innerHTML = html.join('');
+			 //默认选中第一个
+			controls.querySelector('.mui-control-item').classList.add('mui-active');
+			contents.querySelector('.mui-control-content').classList.add('mui-active');
+		</script>
+</body>
+</html>
